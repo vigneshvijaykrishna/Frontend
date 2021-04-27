@@ -1,16 +1,50 @@
 [
   {
+    "name": "channelstatus",
+    "path": "/channelstatus",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/channelstatus.vue",
+    "chunkName": "pages/channelstatus"
+  },
+  {
+    "name": "contactsupport",
+    "path": "/contactsupport",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/contactsupport.vue",
+    "chunkName": "pages/contactsupport"
+  },
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/dashboard.vue",
+    "chunkName": "pages/dashboard"
+  },
+  {
+    "name": "landingpage",
+    "path": "/landingpage",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/landingpage.vue",
+    "chunkName": "pages/landingpage"
+  },
+  {
     "name": "login",
     "path": "/login",
     "component": "/mnt/c/workspace/trialnext/newprojectL/pages/login.vue",
-    "chunkName": "pages/login",
-    "_name": "_5c9b65b9"
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/settings.vue",
+    "chunkName": "pages/settings"
+  },
+  {
+    "name": "usermanagement",
+    "path": "/usermanagement",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/usermanagement.vue",
+    "chunkName": "pages/usermanagement"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/mnt/c/workspace/trialnext/newprojectL/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_da187abc"
+    "chunkName": "pages/index"
   }
 ]

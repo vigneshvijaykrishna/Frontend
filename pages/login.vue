@@ -1,19 +1,19 @@
 <template>
   <v-app id="login">
-     <v-toolbar-title class = "indigo darken-4">
-        <span class="black--text font-weight-bold mb-3">{{ "NEXTAPP" }}</span>
+     <v-toolbar-title class = "pulse_secondary">
+        <span class="pulse_primary--text font-weight-bold mb-3">{{ "MPulse" }}</span>
       </v-toolbar-title>
     <v-main>
-      <v-container fluid class="indigo darken-1 fill-height">
+      <v-container fluid class="pink lighten-3 fill-height">
         <v-row align="center" justify="center">
           <v-col cols="12" md="3">
             <v-card
-              class="elevation-6 rounded indigo darken-1"
+              class="elevation-6 rounded pulse_primary"
               outlined
               v-if="forgotPassword == false && createNewPasswordCard == false"
             >
-              <v-card-title class="novo_primary--text pt-4"
-                ><h4 class="mt-3 ml-4" color="novo_primary">{{ title }}</h4>
+              <v-card-title class="pulse_secondary--text pt-4"
+                ><h4 class="mt-3 ml-4" color="pulse_primary">{{ title }}</h4>
                 <v-spacer />
                 <img
                   src="../assets/images/logo.png"
@@ -23,7 +23,7 @@
               <v-card-text>
                 <v-form ref="LoginForm" v-model="validLoginForm" class="mr-4 ml-4">
                   <v-col class="pb-0">
-                    <v-row class="novo_primary--text font-weight-bold mb-1">
+                    <v-row class="pulse_primary--text font-weight-bold mb-1">
                       Email ID
                     </v-row>
                     <v-row>
@@ -38,7 +38,7 @@
                           (v) => !!v || 'Please fill this field',
                           (v) => !v || /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v)  || 'E-mail must be valid']"
                         clearable
-                        color="novo_primary"
+                        color="pulse_primary"
                         outlined
                         dense
                         @keyup.native.enter="Login"
@@ -46,7 +46,7 @@
                     </v-row>
                   </v-col>
                   <v-col class="mt-0 pt-0 mb-0 pb-0">
-                    <v-row class="novo_primary--text font-weight-bold mb-1">
+                    <v-row class="pulse_primary--text font-weight-bold mb-1">
                       Password
                     </v-row>
                     <v-row>
@@ -62,7 +62,7 @@
                         outlined
                         minlength="8"
                         dense
-                        color="novo_primary"
+                        color="pulse_primary"
                         counter
                         :type="show ? 'text' : 'password'"
                         @click:append="show = !show"
@@ -88,7 +88,7 @@
               <v-card-actions class="pa-4 ml-4 mr-4 pb-5 pt-0">
                 <v-btn
                   block
-                  color="indigo lighten-2"
+                  color="pulse_primary"
                   :loading="loading"
                   dark
                   @click="Login"
@@ -97,11 +97,11 @@
               </v-card-actions>
             </v-card>
             <v-card
-              class="elevation-6 rounded pa-4 pt-2 indigo"
+              class="elevation-6 rounded pa-4 pt-2 "
               outlined
               v-if="forgotPassword == true &&  createNewPasswordCard== false"
             >
-              <v-card-title class="white--text font-weight-bold mb-2"
+              <v-card-title class="pulse_primary--text font-weight-bold mb-2"
                 >Forgot Password
               </v-card-title>
               <v-card-text>
@@ -109,7 +109,7 @@
                   Share your email Id, we will send you an OTP (one time
                   password) to your email. You can login using that.
                   <v-col class="pb-0 mt-4">
-                    <v-row class="novo_primary--text font-weight-bold mb-1">
+                    <v-row class="pulse_primary--text font-weight-bold mb-1">
                       Email ID
                     </v-row>
                     <v-row>
@@ -124,7 +124,7 @@
                           (v) => !!v || 'Please fill this field',
                           (v) => !v || /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v)  || 'E-mail must be valid']"
                         clearable
-                        color="novo_primary"
+                        color="pulse_primary"
                         outlined
                         dense
                       ></v-text-field>
@@ -135,7 +135,7 @@
               <v-card-actions class="layout column ml-2 mr-2 pt-0 pb-0">
                 <v-btn
                   block
-                  color="novo_primary"
+                  color="pulse_primary"
                   :loading="requestOtpButtonLoading"
                   dark
                   @click="requestOtp"
@@ -158,7 +158,7 @@
               outlined
               v-if="forgotPassword == false && createNewPasswordCard == true"
             >
-              <v-card-title class="novo_primary--text"
+              <v-card-title class="pulse_primary--text"
                 >Create new password
               </v-card-title>
               <v-card-text>
@@ -166,7 +166,7 @@
                  Password must contain at least Min 8 characters, lowercase letter,
                   one number, a special character and one uppercase letter.
                   <v-col class="mb-0 pb-0 mt-4">
-                    <v-row class="novo_primary--text font-weight-bold mb-1">
+                    <v-row class="pulse_primary--text font-weight-bold mb-1">
                       Enter Password
                     </v-row>
                     <v-row>
@@ -180,7 +180,7 @@
                         clearable
                         outlined
                         dense
-                        color="novo_primary"
+                        color="pulse_primary"
                         counter
                         minlength="8"
                         :type="showNewPassword ? 'text' : 'password'"
@@ -189,7 +189,7 @@
                     </v-row>
                   </v-col>
                   <v-col class="mt-0 pt-0 mb-0 pb-0">
-                    <v-row class="novo_primary--text font-weight-bold mb-1">
+                    <v-row class="pulse_primary--text font-weight-bold mb-1">
                       Re-enter Password
                     </v-row>
                     <v-row>
@@ -202,7 +202,7 @@
                         clearable
                         outlined
                         dense
-                        color="novo_primary"
+                        color="pulse_primary"
                         counter
                         minlength="8"
                         :type="showConfirmPassword ? 'text' : 'password'"
@@ -215,7 +215,7 @@
               <v-card-actions class="layout column ml-2 mr-2 pt-0">
                 <v-btn
                   block
-                  color="novo_primary"
+                  color="pulse_primary"
                   dark
                   :loading="forgotPasswordButtonLoading"
                   @click="createNewPassword"
@@ -355,7 +355,9 @@ export default class Login extends Vue {
     }
     alert(this.Email)
     alert(this.password)
+    this.$router.push({ name: "landingpage" });
   }
+
 }
 </script>
 <style scoped>
