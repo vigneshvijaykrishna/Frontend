@@ -1,0 +1,16 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_5c9b65b9"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/mnt/c/workspace/trialnext/newprojectL/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_da187abc"
+  }
+]
