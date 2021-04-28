@@ -1,7 +1,6 @@
 <template>
-<h1>USER MANAGEMENT</h1>
+  <h2>UserManagement</h2>
 </template>
-
 
 <script lang="ts">
 import { Component, Vue, namespace, mixins } from "nuxt-property-decorator";
@@ -10,11 +9,7 @@ import { Component, Vue, namespace, mixins } from "nuxt-property-decorator";
   components: {
   },
 })
-export default class Usermanagement extends Vue {
+export default class usermanagement extends Vue {
 
 }
 </script>
-
-<style scoped>
-
-</style>

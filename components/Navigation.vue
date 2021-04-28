@@ -47,7 +47,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue, namespace, mixins } from "nuxt-property-decorator";
+import { Component, Vue, namespace } from "nuxt-property-decorator";
 import AdminMenu from '~/components/menu/AdminMenu.vue';
 import UserMenu from '~/components/menu/UserMenu.vue';
 const user = namespace('user');
