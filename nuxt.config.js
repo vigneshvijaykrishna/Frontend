@@ -65,8 +65,8 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          pulse_primary: '#DCE775',
-          pulse_secondary: '#9E9D24',
+          pulse_primary: '#B2DFDB',
+          pulse_secondary: '#80CBC4',
         }
       }
     }

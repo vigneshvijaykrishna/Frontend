@@ -1,1 +1,11 @@
-{}
+{
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "MenuAdminMenu": {
+    "description": "Auto imported from components/menu/AdminMenu.vue"
+  },
+  "MenuUserMenu": {
+    "description": "Auto imported from components/menu/UserMenu.vue"
+  }
+}

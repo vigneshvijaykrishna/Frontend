@@ -2,9 +2,15 @@
 <H2>DASHBOARD</H2>
 </template>
 
-<script>
-export default {
-name: "dashboard"
+<script lang="ts">
+import { Component, Vue, namespace, mixins } from "nuxt-property-decorator";
+@Component({
+  layout: "dashboard",
+  components: {
+  },
+})
+export default class mainDash extends Vue {
+
 }
 </script>
 

@@ -7,7 +7,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _771111f6 = () => interopDefault(import('../pages/channelstatus.vue' /* webpackChunkName: "pages/channelstatus" */))
 const _4053d98f = () => interopDefault(import('../pages/contactsupport.vue' /* webpackChunkName: "pages/contactsupport" */))
 const _682df764 = () => interopDefault(import('../pages/dashboard.vue' /* webpackChunkName: "pages/dashboard" */))
-const _b5360214 = () => interopDefault(import('../pages/landingpage.vue' /* webpackChunkName: "pages/landingpage" */))
 const _5c9b65b9 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _0bb77a03 = () => interopDefault(import('../pages/settings.vue' /* webpackChunkName: "pages/settings" */))
 const _87c746a4 = () => interopDefault(import('../pages/usermanagement.vue' /* webpackChunkName: "pages/usermanagement" */))
@@ -36,10 +35,6 @@ export const routerOptions = {
     path: "/dashboard",
     component: _682df764,
     name: "dashboard"
-  }, {
-    path: "/landingpage",
-    component: _b5360214,
-    name: "landingpage"
   }, {
     path: "/login",
     component: _5c9b65b9,

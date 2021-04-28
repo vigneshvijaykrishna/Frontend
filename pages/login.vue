@@ -4,7 +4,7 @@
         <span class="pulse_primary--text font-weight-bold mb-3">{{ "MPulse" }}</span>
       </v-toolbar-title>
     <v-main>
-      <v-container fluid class="pink lighten-3 fill-height">
+      <v-container fluid class="green lighten-3 fill-height">
         <v-row align="center" justify="center">
           <v-col cols="12" md="3">
             <v-card
@@ -355,7 +355,7 @@ export default class Login extends Vue {
     }
     alert(this.Email)
     alert(this.password)
-    this.$router.push({ name: "landingpage" });
+    this.$router.push({ name: "usermanagement" });
   }
 
 }

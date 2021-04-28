@@ -2,9 +2,16 @@
 <h1>USER MANAGEMENT</h1>
 </template>
 
-<script>
-export default {
-name: "usermanagement"
+
+<script lang="ts">
+import { Component, Vue, namespace, mixins } from "nuxt-property-decorator";
+@Component({
+  layout: "dashboard",
+  components: {
+  },
+})
+export default class Usermanagement extends Vue {
+
 }
 </script>
 
