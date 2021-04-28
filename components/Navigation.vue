@@ -17,9 +17,9 @@
       <v-divider class="pulse_secondary"></v-divider>
     </v-list>
       <v-list dense expand class="pt-0">
-      <AdminMenu>{{ AdminMenu }}</AdminMenu>
-<!--        <UserMenu v-if="userRole.toLowerCase()==usrRole.toLowerCase()">{{UserMenu}}</UserMenu>-->
-<!--      <AdminMenu v-if="userRole.toLowerCase()==adminRole.toLowerCase()">{{AdminMenu}}</AdminMenu>-->
+        <AdminMenu>{{AdminMenu}}</AdminMenu>
+<!--        <UserMenu v-if="userRole.toLowerCase()==usrRole.toLowerCase()"></UserMenu>-->
+<!--      <AdminMenu v-if="userRole.toLowerCase()==adminRole.toLowerCase()"></AdminMenu>-->
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
@@ -50,13 +50,14 @@
 import { Component, Vue, namespace, mixins } from "nuxt-property-decorator";
 import AdminMenu from '~/components/menu/AdminMenu.vue';
 import UserMenu from '~/components/menu/UserMenu.vue';
+const user = namespace('user');
 import { Roles } from '@/constants/roles.constants';
-
+var _ = require('lodash');
 
 @Component({
   components: {
-    AdminMenu
-    // UserMenu
+    AdminMenu,
+    UserMenu
 
   },
 })
@@ -70,6 +71,10 @@ export default class Navigation extends Vue {
   miniVariant: boolean = false;
   message: string = "";
   logoutButtonLoading: boolean = false;
+
+  @user.Getter
+  userRole!: string;
+
 
 
 
