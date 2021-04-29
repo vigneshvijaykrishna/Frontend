@@ -23,6 +23,9 @@
               clearable
             ></v-select>
           </v-col>
+          <v-toolbar-title class="subtitle-1 grey--text text--darken-1">
+            {{Channel}}
+          </v-toolbar-title>
           <v-spacer></v-spacer>
              <v-badge
             :content="messages"
@@ -382,6 +385,7 @@ export default class MainDash extends Vue {
   infoDialog:boolean = false;
   addDialog: boolean = false;
   ChannelName:Array<string> = ['Channel 1','Channel 2','Channel 3','Channel 4'];
+  Channel:Array<string> = ['Channel 1']
 
 
 
