@@ -55,6 +55,7 @@ import { Roles } from '@/constants/roles.constants';
 var _ = require('lodash');
 
 @Component({
+  middleware: ['auth'],
   components: {
     AdminMenu,
     UserMenu

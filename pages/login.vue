@@ -355,7 +355,7 @@ export default class Login extends Vue {
     }
     alert(this.Email)
     alert(this.password)
-    this.$router.push({ name: "usermanagement" });
+    this.$router.push({ name: "dashboard" });
   }
 
 }
